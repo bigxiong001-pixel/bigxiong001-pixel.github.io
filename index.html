@@ -1,177 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Atlas Procurement System</title>
-
-<style>
-
-body{
-margin:0;
-background:#0b1020;
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
-color:white;
-text-align:center;
-}
-
-.hero{
-padding:120px 20px;
-}
-
-h1{
-font-size:64px;
-margin-bottom:10px;
-}
-
-h2{
-font-weight:400;
-color:#9fb2d0;
-}
-
-p{
-max-width:700px;
-margin:auto;
-line-height:1.8;
-font-size:20px;
-color:#c9d3e6;
-}
-
-.button{
-display:inline-block;
-margin-top:50px;
-padding:18px 36px;
-background:#2b7fff;
-color:white;
-text-decoration:none;
-border-radius:12px;
-font-size:20px;
-}
-
-.features{
-
-display:flex;
-
-justify-content:center;
-
-flex-wrap:wrap;
-
-margin-top:100px;
-
-gap:30px;
-
-}
-
-.card{
-
-background:#141d33;
-
-padding:30px;
-
-width:280px;
-
-border-radius:18px;
-
-}
-
-.card h3{
-
-margin-bottom:10px;
-
-}
-
-footer{
-
-margin:120px 0 40px;
-
-color:#7f90aa;
-
-}
-
-</style>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atlas Procurement System | NEXUS SUPPLY LLC</title>
+  <meta name="description" content="Atlas Procurement System helps businesses automate digital procurement, supplier management, and order fulfillment workflows." />
+  <meta property="og:title" content="Atlas Procurement System" />
+  <meta property="og:description" content="Global digital procurement infrastructure for business customers." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root{--bg:#f7f9fc;--card:#fff;--text:#101828;--muted:#667085;--line:#e4e7ec;--blue:#155eef;--blue2:#eff4ff;--dark:#0b1220}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:rgba(255,255,255,.82);backdrop-filter:blur(10px);position:sticky;top:0;z-index:10}.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px}.mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#155eef,#53b1fd);display:grid;place-items:center;color:#fff;font-weight:900}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;background:var(--blue);color:#fff;font-weight:700}.hero{padding:92px 0 70px}.eyebrow{display:inline-flex;gap:8px;align-items:center;background:var(--blue2);color:#175cd3;border:1px solid #b2ccff;border-radius:999px;padding:6px 12px;font-size:14px;font-weight:700}.hero h1{font-size:62px;line-height:1.04;letter-spacing:-2px;margin:24px 0 20px;max-width:890px}.hero p{font-size:20px;color:var(--muted);max-width:720px;margin:0 0 30px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 12px 30px rgba(16,24,40,.04)}.card h3{margin:0 0 10px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:15px}.section{padding:66px 0}.section h2{font-size:38px;letter-spacing:-1px;margin:0 0 14px}.section .lead{color:var(--muted);font-size:18px;max-width:760px;margin:0 0 28px}.split{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}.list{display:grid;gap:14px}.item{display:flex;gap:12px;align-items:flex-start}.check{margin-top:3px;width:22px;height:22px;border-radius:999px;background:#dcfae6;color:#079455;display:grid;place-items:center;font-weight:900;font-size:14px;flex:0 0 22px}.panel{background:var(--dark);color:#fff;border-radius:24px;padding:34px}.panel p{color:#cbd5e1}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.metric{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px}.metric strong{display:block;font-size:24px}.contact{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.footer{padding:28px 0;color:var(--muted);font-size:14px}.footrow{display:flex;justify-content:space-between;gap:20px;align-items:center}.footlinks{display:flex;gap:16px}.small{font-size:14px;color:var(--muted)}
+    @media(max-width:850px){.navlinks{display:none}.hero h1{font-size:42px}.grid,.split,.metrics{grid-template-columns:1fr}.section{padding:46px 0}.hero{padding:60px 0 44px}.footrow{flex-direction:column;align-items:flex-start}}
+  </style>
 </head>
-
 <body>
-
-<div class="hero">
-
-<h1>Atlas</h1>
-
-<h2>Global Digital Goods Procurement Infrastructure</h2>
-
-<p>
-
-Atlas connects digital suppliers worldwide into one procurement layer.
-
-One API.
-
-Realtime pricing.
-
-Intelligent routing.
-
-Instant fulfillment.
-
-</p>
-
-<a class="button" href="mailto:contact@atlasprocurement.io">
-
-Become a Partner
-
-</a>
-
-<div class="features">
-
-<div class="card">
-
-<h3>Supplier Router</h3>
-
-<p>
-
-Automatically choose the best supplier.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Realtime Pricing</h3>
-
-<p>
-
-Monitor every supplier in realtime.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Procurement Engine</h3>
-
-<p>
-
-Purchase instantly after customer payment.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<footer>
-
-Atlas Procurement System © 2026
-
-</footer>
-
+  <header class="nav"><div class="wrap" style="display:flex;align-items:center;justify-content:space-between;width:100%"><a class="brand" href="#top"><span class="mark">A</span><span>Atlas Procurement System</span></a><nav class="navlinks"><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></nav></div></header>
+  <main id="top">
+    <section class="hero"><div class="wrap"><span class="eyebrow">A product of NEXUS SUPPLY LLC</span><h1>Global digital procurement infrastructure for business customers.</h1><p>Atlas Procurement System helps businesses automate digital procurement, supplier sourcing, order fulfillment, and operational workflows for digital products.</p><a class="btn" href="mailto:bigxiong001@gmail.com">Contact Us</a></div></section>
+    <section class="section"><div class="wrap grid"><div class="card"><h3>Procurement Automation</h3><p>Workflow tools for sourcing, ordering, and fulfillment operations.</p></div><div class="card"><h3>Supplier Management</h3><p>Structured supplier records, routing logic, and relationship tracking.</p></div><div class="card"><h3>Order Fulfillment</h3><p>Processes designed to support digital product delivery operations.</p></div><div class="card"><h3>API Integration</h3><p>Infrastructure planning for future supplier router and procurement APIs.</p></div></div></section>
+    <section class="section" id="about"><div class="wrap split"><div><h2>About Atlas</h2><p class="lead">Atlas Procurement System is being developed by NEXUS SUPPLY LLC, an Ohio limited liability company. We build B2B software for digital procurement, supplier management, and automated fulfillment workflows.</p><div class="list"><div class="item"><span class="check">✓</span><div><strong>Early-stage software development</strong><br><span class="small">Focused on practical procurement workflows for business users.</span></div></div><div class="item"><span class="check">✓</span><div><strong>Remote-first operations</strong><br><span class="small">Built for online business workflows and distributed operations.</span></div></div><div class="item"><span class="check">✓</span><div><strong>Business customer focus</strong><br><span class="small">Designed for companies that need structured digital sourcing and fulfillment support.</span></div></div></div></div><div class="panel"><h2 style="color:#fff;margin-bottom:10px">What we are building</h2><p>A software platform that helps business customers manage procurement tasks, supplier data, purchase workflows, and fulfillment processes from a single operating system.</p><div class="metrics"><div class="metric"><strong>B2B</strong><span>Software</span></div><div class="metric"><strong>API</strong><span>Ready roadmap</span></div><div class="metric"><strong>Digital</strong><span>Goods focus</span></div></div></div></div></section>
+    <section class="section" id="services"><div class="wrap"><h2>Services</h2><p class="lead">Atlas focuses on software-enabled procurement operations and supplier workflow infrastructure.</p><div class="grid"><div class="card"><h3>Digital Procurement Workflow</h3><p>Tools for managing sourcing requirements, purchase requests, and procurement activity.</p></div><div class="card"><h3>Supplier Records & Routing</h3><p>Structured supplier information and routing logic for procurement decisions.</p></div><div class="card"><h3>Fulfillment Operations</h3><p>Operational workflows to support digital order handling and post-purchase fulfillment.</p></div><div class="card"><h3>Integration Planning</h3><p>API-oriented architecture for future supplier and platform connectivity.</p></div></div></div></section>
+    <section class="section contact" id="contact"><div class="wrap split"><div><h2>Contact</h2><p class="lead">For business inquiries, partnership discussions, or early access requests, contact NEXUS SUPPLY LLC.</p></div><div class="card"><p><strong>Email</strong><br><a href="mailto:bigxiong001@gmail.com">bigxiong001@gmail.com</a></p><p><strong>Company</strong><br>NEXUS SUPPLY LLC</p><p><strong>Business Location</strong><br>Ohio, United States<br><span class="small">Remote operations</span></p></div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footrow"><div>© 2026 NEXUS SUPPLY LLC. All rights reserved.</div><div class="footlinks"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div></div></footer>
 </body>
-
 </html>
